@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Norman Odhiambo Okudo - Front-End Developer & Business Professional</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+    }
+    .smooth-scroll {
+      scroll-behavior: smooth;
+    }
+    .hover-scale {
+      transition: transform 0.3s ease;
+    }
+    .hover-scale:hover {
+      transform: scale(1.05);
+    }
+    .section-padding {
+      padding: 4rem 1rem;
+    }
+  </style>
+</head>
+<body class="bg-gray-100 smooth-scroll">
+  <!-- Navigation -->
+  <nav class="bg-white shadow fixed w-full top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between h-16">
+        <div class="flex items-center">
+          <h1 class="text-2xl font-bold text-gray-800">Norman Odhiambo Okudo</h1>
+        </div>
+        <div class="flex items-center space-x-4">
+          <a href="#home" class="text-gray-600 hover:text-blue-500">Home</a>
+          <a href="#about" class="text-gray-600 hover:text-blue-500">About</a>
+          <a href="#skills" class="text-gray-600 hover:text-blue-500">Skills</a>
+          <a href="#projects" class="text-gray-600 hover:text-blue-500">Projects</a>
+          <a href="#contact" class="text-gray-600 hover:text-blue-500">Contact</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="bg-gradient-to-r from-blue-500 to-indigo-600 text-white text-center section-padding">
+    <div class="max-w-4xl mx-auto">
+      <img src="profile.jpg" alt="Norman Odhiambo Okudo" class="w-32 h-32 rounded-full mx-auto mb-4">
+      <h1 class="text-4xl md:text-5xl font-bold mb-4">Hi, I'm Norman Odhiambo Okudo</h1>
+      <p class="text-lg md:text-xl mb-6">Front-End Developer & Business Management Professional</p>
+      <p class="text-base md:text-lg mb-8">I craft user-friendly digital experiences with a strategic business mindset to drive impactful results.</p>
+      <a href="#contact" class="bg-white text-blue-500 px-6 py-3 rounded-full font-semibold hover:bg-gray-200">Get in Touch</a>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="bg-white section-padding">
+    <div class="max-w-4xl mx-auto text-center">
+      <h2 class="text-3xl font-bold mb-6">About Me</h2>
+      <p class="text-gray-600 mb-4">
+        I'm a passionate front-end developer with expertise in HTML, CSS, JavaScript, and React, combined with a strong background in business management. I excel at building responsive, accessible web applications while leading projects to meet business goals. My unique blend of technical and strategic skills allows me to create solutions that are both user-centric and business-driven.
+      </p>
+      <p class="text-gray-600">
+        Whether it's optimizing a website for performance or managing cross-functional teams to deliver projects on time, I thrive at the intersection of technology and business.
+      </p>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="bg-gray-100 section-padding">
+    <div class="max-w-4xl mx-auto">
+      <h2 class="text-3xl font-bold text-center mb-8">Skills</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div>
+          <h3 class="text-xl font-semibold mb-4">Technical Skills</h3>
+          <ul class="text-gray-600 space-y-2">
+            <li>HTML5, CSS3, JavaScript (ES6+)</li>
+            <li>React, Vue.js, Tailwind CSS</li>
+            <li>Git, Webpack, npm</li>
+            <li>UI/UX Design, Accessibility (WCAG)</li>
+            <li>Testing: Jest, Cypress</li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="text-xl font-semibold mb-4">Business Management Skills</h3>
+          <ul class="text-gray-600 space-y-2">
+            <li>Project Management (Agile, Scrum)</li>
+            <li>Team Leadership & Stakeholder Management</li>
+            <li>Business Analysis & Strategic Planning</li>
+            <li>Budgeting & Resource Allocation</li>
+            <li>Tools: Jira, Trello, Microsoft Project</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="bg-white section-padding">
+    <div class="max-w-4xl mx-auto">
+      <h2 class="text-3xl font-bold text-center mb-8">Projects</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <!-- Project 1: Technical -->
+        <div class="bg-gray-50 p-6 rounded-lg shadow hover-scale">
+          <img src="eCommerce-Website-Features-1920-x-1080.jpg" alt="E-Commerce Website" class="w-full h-48 object-cover rounded mb-4">
+          <h3 class="text-xl font-semibold">E-Commerce Website</h3>
+          <p class="text-gray-600 mb-4">Built a responsive e-commerce platform using React and Tailwind CSS, integrated with Stripe for payments.</p>
+          <p class="text-gray-600 mb-4"><strong>Impact:</strong> Increased user conversions by 20% through optimized UI.</p>
+          <a href="https://app.wisernotify.com/profile?profile=true" class="text-blue-500 hover:underline">Live Demo</a> | 
+          <a href="https://github.com/Norman-Berlin" class="text-blue-500 hover:underline">GitHub</a>
+        </div>
+        <!-- Project 2: Business Management -->
+        <div class="bg-gray-50 p-6 rounded-lg shadow hover-scale">
+          <img src="product-launch-plan-roadmap-01.webp" alt="Product Launch" class="w-full h-48 object-cover rounded mb-4">
+          <h3 class="text-xl font-semibold">Product Launch Strategy</h3>
+          <p class="text-gray-600 mb-4">Led a team of 5 to launch a SaaS product, managing timelines, budgets, and stakeholder communication.</p>
+          <p class="text-gray-600 mb-4"><strong>Impact:</strong> Delivered project 10% under budget, achieving 95% client satisfaction.</p>
+          <a href="#" class="text-blue-500 hover:underline">Case Study</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="bg-gray-100 section-padding">
+    <div class="max-w-4xl mx-auto text-center">
+      <h2 class="text-3xl font-bold mb-6">Get in Touch</h2>
+      <p class="text-gray-600 mb-8">Interested in collaborating? Let's create something amazing together!</p>
+      <form class="max-w-lg mx-auto space-y-4">
+        <input type="text" placeholder="Norman Odhiambo Okudo" class="w-full p-3 rounded border focus:outline-none focus:ring-2 focus:ring-blue-500">
+        <input type="email" placeholder="Your Email" class="w-full p-3 rounded border focus:outline-none focus:ring-2 focus:ring-blue-500">
+        <textarea placeholder="Your Message" class="w-full p-3 rounded border focus:outline-none focus:ring-2 focus:ring-blue-500" rows="5"></textarea>
+        <button type="submit" class="bg-blue-500 text-white px-6 py-3 rounded-full font-semibold hover:bg-blue-600">Send Message</button>
+      </form>
+      <div class="mt-6 flex justify-center space-x-4">
+        <a href="https://www.linkedin.com/in/norman-berlin-b9319a244/" target="_blank" class="text-gray-600 hover:text-blue-500">LinkedIn</a>
+        <a href="https://github.com/Norman-Berlin" target="_blank" class="text-gray-600 hover:text-blue-500">GitHub</a>
+        <a href="https://x.com/Norman71811278" target="_blank" class="text-gray-600 hover:text-blue-500">X</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white text-center py-4">
+    <p>&copy; 2025 Norman Odhiambo Okudo. All rights reserved.</p>
+  </footer>
+
+  <script>
+    // Smooth scrolling for navigation links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+  </script>
+</body>
+</html>
