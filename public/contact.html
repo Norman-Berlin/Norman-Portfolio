@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-          <link rel="icon" type="image/x-icon" href="favicon.png">
+    <link rel="icon" type="image/x-icon" href="favicon.png">
     <title>Contact Norman</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -272,6 +272,7 @@
             display: flex;
             align-items: center;
             gap: 10px;
+            max-width: 90%;
         }
 
         .notification.show {
@@ -287,7 +288,13 @@
             font-size: 1.5rem;
         }
 
-        /* Responsive styles */
+        /* Responsive styles - IMPROVED */
+        @media (max-width: 1200px) {
+            .container {
+                padding: 50px;
+            }
+        }
+
         @media (max-width: 992px) {
             .container {
                 padding: 40px;
@@ -300,38 +307,112 @@
             .section-title {
                 font-size: 2.4rem;
             }
+            
+            .contact-item {
+                padding: 15px;
+            }
+            
+            .contact-item i {
+                width: 50px;
+                height: 50px;
+                font-size: 1.5rem;
+                margin-right: 15px;
+            }
         }
 
         @media (max-width: 768px) {
+            body {
+                padding: 15px;
+                display: block;
+            }
+            
+            .contact {
+                border-radius: 15px;
+            }
+            
             .container {
-                padding: 30px;
+                padding: 30px 25px;
             }
             
             .contact-content {
                 flex-direction: column;
+                margin-top: 40px;
+                gap: 30px;
             }
             
             .section-title {
                 font-size: 2.2rem;
+                margin-bottom: 15px;
+            }
+            
+            .section-title::after {
+                bottom: -10px;
+                width: 80px;
+            }
+            
+            .contact-info h3, 
+            .contact-form h3 {
+                font-size: 1.6rem;
+                margin-bottom: 20px;
+                padding-bottom: 10px;
             }
             
             .contact-form {
-                padding: 30px;
-            }
-        }
-
-        @media (max-width: 480px) {
-            .container {
                 padding: 25px;
             }
             
+            .contact-item {
+                flex-direction: row;
+                text-align: left;
+                margin-bottom: 20px;
+            }
+            
+            .contact-item i {
+                margin-right: 15px;
+                margin-bottom: 0;
+            }
+            
+            .form-group input,
+            .form-group textarea {
+                padding: 15px;
+            }
+            
+            .btn {
+                padding: 15px;
+                font-size: 1rem;
+            }
+            
+            .notification {
+                right: 15px;
+                bottom: 15px;
+                left: 15px;
+                max-width: calc(100% - 30px);
+                padding: 15px;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .container {
+                padding: 25px 20px;
+            }
+            
             .section-title {
-                font-size: 2rem;
+                font-size: 1.9rem;
+            }
+            
+            .contact-info h3, 
+            .contact-form h3 {
+                font-size: 1.4rem;
+            }
+            
+            .contact-form {
+                padding: 20px;
             }
             
             .contact-item {
                 flex-direction: column;
                 text-align: center;
+                padding: 20px 15px;
             }
             
             .contact-item i {
@@ -339,12 +420,56 @@
                 margin-bottom: 15px;
             }
             
-            .contact-form {
-                padding: 25px;
-            }
-            
             .contact-social {
                 justify-content: center;
+                flex-wrap: wrap;
+            }
+            
+            .contact-social a {
+                width: 45px;
+                height: 45px;
+                font-size: 1.2rem;
+            }
+            
+            .form-group {
+                margin-bottom: 20px;
+            }
+            
+            .notification {
+                padding: 12px 15px;
+                font-size: 0.9rem;
+            }
+            
+            .notification i {
+                font-size: 1.3rem;
+            }
+        }
+
+        @media (max-width: 400px) {
+            .section-title {
+                font-size: 1.7rem;
+            }
+            
+            .contact-item {
+                padding: 15px 10px;
+            }
+            
+            .contact-item div h4 {
+                font-size: 1.1rem;
+            }
+            
+            .contact-item div p {
+                font-size: 0.9rem;
+            }
+            
+            .contact-form {
+                padding: 15px;
+            }
+            
+            .form-group input,
+            .form-group textarea {
+                padding: 12px 15px;
+                font-size: 0.95rem;
             }
         }
 
